@@ -1,0 +1,4 @@
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\DotNetUltraLight\Source\UltraLightCLIDSI\Windows_vs2022\debug32md\UltraLightCLIDSI_VS2022.vcxproj.AssemblyReference.cache
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\DotNetUltraLight\Source\UltraLightCLIDSI\Windows_vs2022\debug32md\UltraLightCLIDSI_VS2022.vcxproj.CopyComplete
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Source\UltraLightCLIDSI\Windows_vs2022\debug32md\UltraLightCLIDSI_VS2022.vcxproj.AssemblyReference.cache
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Source\UltraLightCLIDSI\Windows_vs2022\debug32md\UltraLightCLIDSI_VS2022.vcxproj.CopyComplete

@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug_MTDLL_Server|Win32">
+      <Configuration>debug_MTDLL_Server</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_MTDLL_Server|x64">
+      <Configuration>debug_MTDLL_Server</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_MTDLL|Win32">
+      <Configuration>debug_MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="debug_MTDLL|x64">
+      <Configuration>debug_MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_MTDLL_Server|Win32">
+      <Configuration>release_MTDLL_Server</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_MTDLL_Server|x64">
+      <Configuration>release_MTDLL_Server</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_MTDLL|Win32">
+      <Configuration>release_MTDLL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release_MTDLL|x64">
+      <Configuration>release_MTDLL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>OPlusCLIDSI</ProjectName>
+    <ProjectGuid>{155A435E-247D-4DAF-A56B-5DB70D889E6C}</ProjectGuid>
+    <RootNamespace>UltraLightCLIDSI</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <ReleaseOrDebug Condition="$(Configuration.Contains('Debug'))">Debug</ReleaseOrDebug>
+    <ReleaseOrDebug Condition="!$(Configuration.Contains('Debug'))">Release</ReleaseOrDebug>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <!-- Start of autonaming -->
+  <Import Project="..\driver.props" />
+  <!-- End of autonaming -->
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.31118.1</_ProjectFileVersion>
+    <OutDir>..\..\Bin\$(C_BLD_OUTDIR)\</OutDir>
+    <IntDir>$(C_BLD_OUTDIR)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName Condition="'$(Configuration)'=='release_MTDLL' Or '$(Configuration)'=='debug_MTDLL'">$(ProjectName)ODBC$(C_BITNESS)</TargetName>
+    <TargetName Condition="'$(Configuration)'=='release_MTDLL_Server' Or '$(Configuration)'=='debug_MTDLL_Server'">$(ProjectName)Server$(C_BITNESS)</TargetName>
+    <ReferencePath>$(SIMBAENGINE_DIR)\Bin\$(ReleaseOrDebug)\net35;$(ReferencePath)</ReferencePath>
+    <TargetExt Condition="'$(Configuration)'=='debug_MTDLL_Server'">.exe</TargetExt>
+    <TargetExt Condition="'$(Configuration)'=='release_MTDLL_Server'">.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaODBC.lib;shell32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>$(SIMBAENGINE_DIR)\Common\Exports\Windows\odbc.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>
+      </SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRImageType>Default</CLRImageType>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);$(ULTRALIGHTCLIDSI_SERVER_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions);SERVERTARGET</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libcrypto.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libssl.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaServer.lib;SimbaServerMain.lib;shell32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+      <CLRImageType>Default</CLRImageType>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CSCommonMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ServerMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaODBC.lib;shell32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>$(SIMBAENGINE_DIR)\Common\Exports\Windows\odbc.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>
+      </SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+      <CLRImageType>Default</CLRImageType>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);$(ULTRALIGHTCLIDSI_SERVER_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions);SERVERTARGET</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaServer.lib;SimbaServerMain.lib;shell32.lib;odbccp32.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libcrypto.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libssl.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+      <CLRImageType>Default</CLRImageType>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CSCommonMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ServerMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaODBC.lib;shell32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>$(SIMBAENGINE_DIR)\Common\Exports\Windows\odbc.def</ModuleDefinitionFile>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);$(ULTRALIGHTCLIDSI_SERVER_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions);SERVERTARGET</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaServer.lib;SimbaServerMain.lib;shell32.lib;odbccp32.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libcrypto.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libssl.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CSCommonMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ServerMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaODBC.lib;shell32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>$(SIMBAENGINE_DIR)\Common\Exports\Windows\odbc.def</ModuleDefinitionFile>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release_MTDLL_Server|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ULTRALIGHTCLIDSI_INCLUDE_DIRS);$(ULTRALIGHTCLIDSI_SERVER_INCLUDE_DIRS);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions);SERVERTARGET</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)$(TargetName)2.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Link>
+      <AdditionalDependencies>SimbaCLIDSI.lib;User32.lib;AEProcessor.lib;Core.lib;DSIExt.lib;Executor.lib;Parser.lib;SimbaDSI.lib;SimbaSupport.lib;SimbaServer.lib;SimbaServerMain.lib;shell32.lib;odbccp32.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libcrypto.lib;$(SIMBAENGINE_THIRDPARTY_DIR)/openssl/$(S_OPENSSL_V)/$(C_BLD_RELDIR)/lib/libssl.lib</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(SIMBAENGINE_DIR)\Lib\$(C_BLD_DIR);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <ForceSymbolReferences>
+      </ForceSymbolReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SubSystem>Console</SubSystem>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Message>Copying ICU DLLs and Error Messages...</Message>
+      <Command>xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicudt*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuin*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\icu\$(S_ICU_V)\$(C_BLD_RELDIR)\lib\sbicuuc*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_THIRDPARTY_DIR)\openssl\$(S_OPENSSL_V)\$(C_BLD_RELDIR)\bin\lib*.dll" "$(TargetDir)"
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ODBCMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CLIDSIMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\CSCommonMessages.xml" ..\..\ErrorMessages\en-US\
+xcopy /Y /D "$(SIMBAENGINE_DIR)\ErrorMessages\en-US\ServerMessages.xml" ..\..\ErrorMessages\en-US\
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="Simba.DotNetDSI, Culture=neutral, PublicKeyToken=861a45bbfd01762d">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <HintPath>$(SIMBAENGINE_DIR)\Bin\$(ReleaseOrDebug)\net35\Simba.DotNetDSI.dll</HintPath>
+    </Reference>
+    <Reference Include="Simba.DotNetDSIExt, Culture=neutral, PublicKeyToken=a152926b1fd3d799">
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <Private>true</Private>
+      <HintPath>$(SIMBAENGINE_DIR)\Bin\$(ReleaseOrDebug)\net35\Simba.DotNetDSIExt.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="UltraLightCLIDSI.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|Win32'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|Win32'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL|x64'">true</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='debug_MTDLL_Server|x64'">true</CompileAsManaged>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\UltraLight\OPlus_Driver.csproj">
+      <Project>{def12805-889d-471f-b500-ea6b335fe1a6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

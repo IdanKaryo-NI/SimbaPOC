@@ -1,0 +1,55 @@
+REGEDIT4
+
+; This registry file is for 64-bit data sources on 64-bit Windows.
+; Make sure to replace all instances of [INSTALL_DIRECTORY] with the installation directory for SimbaEngine before merging with Windows Registry.
+; Notice the double backslashes in the following example: 
+;   "C:\\Simba Technologies"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\ODBC Data Sources]
+"OPlusDriverDSII"="OPlusDriverDSIIDriver"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI\OPlusDriverDSII]
+"Driver"="OPlusDriverDSIIDriver"
+"DBF"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Databases\\Quickstart"
+"Description"="My 64-bit SimbaEngine C# OPlus driver DSII"
+"Locale"="en-US"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\ODBC Drivers]
+"OPlusDriverDSIIDriver"="Installed"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI\OPlusDriverDSIIDriver]
+"Driver"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\obj\\Debug\\net462\\OPlusDriver.dll"
+"Description"="My 64-bit SimbaEngine C# OPlus Driver DSII"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Simba\OPlusDriver]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Simba\OPlusDriver\Driver]
+"DriverManagerEncoding"="UTF-16"
+"DriverLocale"="en-US"
+"ErrorMessagesPath"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\DataAccessComponents\\ErrorMessages"
+"LogLevel"="0"
+"LogNamespace"=""
+"LogPath"=""
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Simba\OPlusDriver\Server]
+"DriverManagerEncoding"="UTF-16"
+"DriverLocale"="en-US"
+"ErrorMessagesPath"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\DataAccessComponents\\ErrorMessages"
+"LogLevel"="0"
+"LogNamespace"=""
+"LogPath"=""
+"MaxConnections"="64"
+"ListenAddress"=""
+"IdleTimeout"="86400"
+"ListenPort"="1543"
+"UseSsl"="0"
+"SslCertfile"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Documentation\\SSLCertificates\\SampleServerCertificate.pem"
+"SslKeyFile"="C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Documentation\\SSLCertificates\\SampleServerKey.pem"
+"MinWorkerThreads"="10"
+"MaxWorkerThreads"="0"

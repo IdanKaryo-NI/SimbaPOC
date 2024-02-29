@@ -1,0 +1,207 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.2": {
+      "Simba.DotNetDSI/10.3.0.1001": {
+        "type": "package",
+        "compile": {
+          "lib/net35/Simba.DotNetDSI.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net35/Simba.DotNetDSI.dll": {
+            "related": ".xml"
+          }
+        },
+        "resource": {
+          "lib/net35/de-DE/Simba.DotNetDSI.resources.dll": {
+            "locale": "de-DE"
+          },
+          "lib/net35/es-ES/Simba.DotNetDSI.resources.dll": {
+            "locale": "es-ES"
+          },
+          "lib/net35/fr-FR/Simba.DotNetDSI.resources.dll": {
+            "locale": "fr-FR"
+          },
+          "lib/net35/it-IT/Simba.DotNetDSI.resources.dll": {
+            "locale": "it-IT"
+          },
+          "lib/net35/ja-JP/Simba.DotNetDSI.resources.dll": {
+            "locale": "ja-JP"
+          },
+          "lib/net35/ko-KR/Simba.DotNetDSI.resources.dll": {
+            "locale": "ko-KR"
+          },
+          "lib/net35/nl-NL/Simba.DotNetDSI.resources.dll": {
+            "locale": "nl-NL"
+          },
+          "lib/net35/pt-PT/Simba.DotNetDSI.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/net35/ru-RU/Simba.DotNetDSI.resources.dll": {
+            "locale": "ru-RU"
+          },
+          "lib/net35/sv-SE/Simba.DotNetDSI.resources.dll": {
+            "locale": "sv-SE"
+          },
+          "lib/net35/zh-CN/Simba.DotNetDSI.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net35/zh-TW/Simba.DotNetDSI.resources.dll": {
+            "locale": "zh-TW"
+          }
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Simba.DotNetDSI/10.3.0.1001": {
+      "sha512": "V0JBrvjrQT5LxQ3lGNEtXukvLbLhXKz2pXZ2UARIejL8t7w5oXN6MrnWKOVkIaxgXUUKQajHg6eIOFJOJrSKiA==",
+      "type": "package",
+      "path": "simba.dotnetdsi/10.3.0.1001",
+      "files": [
+        ".nupkg.metadata",
+        "SimbaEngineSDK_EULA.txt",
+        "lib/net35/Simba.DotNetDSI.dll",
+        "lib/net35/Simba.DotNetDSI.xml",
+        "lib/net35/de-DE/Simba.DotNetDSI.resources.dll",
+        "lib/net35/es-ES/Simba.DotNetDSI.resources.dll",
+        "lib/net35/fr-FR/Simba.DotNetDSI.resources.dll",
+        "lib/net35/it-IT/Simba.DotNetDSI.resources.dll",
+        "lib/net35/ja-JP/Simba.DotNetDSI.resources.dll",
+        "lib/net35/ko-KR/Simba.DotNetDSI.resources.dll",
+        "lib/net35/nl-NL/Simba.DotNetDSI.resources.dll",
+        "lib/net35/pt-PT/Simba.DotNetDSI.resources.dll",
+        "lib/net35/ru-RU/Simba.DotNetDSI.resources.dll",
+        "lib/net35/sv-SE/Simba.DotNetDSI.resources.dll",
+        "lib/net35/zh-CN/Simba.DotNetDSI.resources.dll",
+        "lib/net35/zh-TW/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/Simba.DotNetDSI.dll",
+        "lib/netstandard2.0/Simba.DotNetDSI.xml",
+        "lib/netstandard2.0/de-DE/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/es-ES/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/fr-FR/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/it-IT/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/ja-JP/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/ko-KR/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/nl-NL/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/pt-PT/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/ru-RU/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/sv-SE/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/zh-CN/Simba.DotNetDSI.resources.dll",
+        "lib/netstandard2.0/zh-TW/Simba.DotNetDSI.resources.dll",
+        "simba.dotnetdsi.10.3.0.1001.nupkg.sha512",
+        "simba.dotnetdsi.nuspec"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "sha512": "221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.5.0.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.2": [
+      "Simba.DotNetDSI >= 10.3.0",
+      "System.Data.DataSetExtensions >= 4.5.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\ikario\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\OPlus_Driver.csproj",
+      "projectName": "OPlusDriver",
+      "projectPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\OPlus_Driver.csproj",
+      "packagesPath": "C:\\Users\\ikario\\.nuget\\packages\\",
+      "outputPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+      ],
+      "configFilePaths": [
+        "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\NuGet.Config",
+        "C:\\Users\\ikario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net462"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\DataAccessComponents\\Bin\\release": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net462": {
+        "targetAlias": "net462",
+        "dependencies": {
+          "Simba.DotNetDSI": {
+            "target": "Package",
+            "version": "[10.3.0, )"
+          },
+          "System.Data.DataSetExtensions": {
+            "target": "Package",
+            "version": "[4.5.0, )"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "OPlusDriver depends on Simba.DotNetDSI (>= 10.3.0) but Simba.DotNetDSI 10.3.0 was not found. An approximate best match of Simba.DotNetDSI 10.3.0.1001 was resolved.",
+      "libraryId": "Simba.DotNetDSI",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "q9TQKvL68ZoOTrNRBud0aZGngF/u3rKpFSygr68tm5ljEfD4aQ8CJdsM/Wm+0tEk8ZmIJVxzK5HJPfAcVvwwUA==",
+  "success": true,
+  "projectFilePath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\OPlus_Driver.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ikario\\.nuget\\packages\\simba.dotnetdsi\\10.3.0.1001\\simba.dotnetdsi.10.3.0.1001.nupkg.sha512",
+    "C:\\Users\\ikario\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "OPlusDriver depends on Simba.DotNetDSI (>= 10.3.0) but Simba.DotNetDSI 10.3.0 was not found. An approximate best match of Simba.DotNetDSI 10.3.0.1001 was resolved.",
+      "libraryId": "Simba.DotNetDSI",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.6.2"
+      ]
+    }
+  ]
+}

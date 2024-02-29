@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\DotNetUltraLight\Bin\Windows_vs2022\debug32md\UltraLightCLIDSIODBC32.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs>
+    <NonRecipeFileRef>
+      <FullPath>C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\DotNetUltraLight\Source\UltraLight\UltraLight_Driver.csproj</FullPath>
+    </NonRecipeFileRef>
+  </NonRecipeFileRefs>
+</Project>

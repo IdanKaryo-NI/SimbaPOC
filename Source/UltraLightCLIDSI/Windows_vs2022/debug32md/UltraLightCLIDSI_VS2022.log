@@ -1,0 +1,26 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (Windows_vs2022\debug32md\) contains files shared from another project (UltraLightCLIDSI.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  AssemblyInfo.cpp
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Source\UltraLightCLIDSI\AssemblyInfo.cpp(38,46): warning C4947: 'System::Security::Permissions::SecurityAction::RequestMinimum': marked as obsolete
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Source\UltraLightCLIDSI\AssemblyInfo.cpp(38): message : Message: 'Assembly level declarative security is obsolete and is no longer enforced by the CLR by default. See http://go.microsoft.com/fwlink/?LinkID=155570 for more information.'
+  UltraLightCLIDSI.cpp
+  Generating Code...
+  .NETFramework,Version=v4.6.2.AssemblyAttributes.cpp
+  AssemblyInfo.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+     Creating library ..\..\Bin\Windows_vs2022\debug32md\OPlusCLIDSIODBC32.lib and object ..\..\Bin\Windows_vs2022\debug32md\OPlusCLIDSIODBC32.exp
+SimbaCLIDSI.lib(CLIDSIColumn.obj) : warning LNK4248: unresolved typeref token (01000044) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIMetadataHelper.obj) : warning LNK4248: unresolved typeref token (0100003D) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIExtResultSet.obj) : warning LNK4248: unresolved typeref token (01000048) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIConnection.obj) : warning LNK4248: unresolved typeref token (0100004F) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIDriver.obj) : warning LNK4248: unresolved typeref token (01000046) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIUtilities.obj) : warning LNK4248: unresolved typeref token (01000060) for 'sbicu_71.UnicodeString'; image may not run
+SimbaCLIDSI.lib(CLIDSIQueryExecutor.obj) : warning LNK4248: unresolved typeref token (01000031) for 'Simba.DSI.IParameterModifier'; image may not run
+SimbaCLIDSI.lib(CLIDSIExtQueryExecutor.obj) : warning LNK4248: unresolved typeref token (01000025) for 'Simba.DSI.IParameterModifier'; image may not run
+  UltraLightCLIDSI_VS2022.vcxproj -> C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Bin\Windows_vs2022\debug32md\OPlusCLIDSIODBC32.dll
+C:\Simba Technologies\SimbaEngineSDK\10.3\Examples\Source\OPlus\Source\UltraLight\OPlus_Driver.csproj : warning NU1603: OPlusDriver depends on Simba.DotNetDSI (>= 10.3.0) but Simba.DotNetDSI 10.3.0 was not found. An approximate best match of Simba.DotNetDSI 10.3.0.1001 was resolved.
+  Copying ICU DLLs and Error Messages...
+  0 File(s) copied
+  0 File(s) copied
+  0 File(s) copied
+  0 File(s) copied
+  0 File(s) copied
+  0 File(s) copied

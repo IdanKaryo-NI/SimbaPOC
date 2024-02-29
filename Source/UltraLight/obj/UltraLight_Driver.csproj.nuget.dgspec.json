@@ -1,0 +1,63 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\UltraLight_Driver.csproj": {}
+  },
+  "projects": {
+    "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\UltraLight_Driver.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\UltraLight_Driver.csproj",
+        "projectName": "Simba.UltraLight.Driver",
+        "projectPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\UltraLight_Driver.csproj",
+        "packagesPath": "C:\\Users\\ikario\\.nuget\\packages\\",
+        "outputPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\Source\\UltraLight\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\NuGet.Config",
+          "C:\\Users\\ikario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\DataAccessComponents\\Bin\\release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "targetAlias": "net462",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "targetAlias": "net462",
+          "dependencies": {
+            "Simba.DotNetDSI": {
+              "target": "Package",
+              "version": "[10.3.0, )"
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UltraLight_Provider", "UltraLight\UltraLight_Provider.csproj", "{3BD644C9-760B-43FD-A715-003E1F59BF20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_net35|Any CPU = Debug_net35|Any CPU
+		Debug_net462|Any CPU = Debug_net462|Any CPU
+		Debug_net6.0|Any CPU = Debug_net6.0|Any CPU
+		Debug_net7.0|Any CPU = Debug_net7.0|Any CPU
+		Debug_netstandard2.0|Any CPU = Debug_netstandard2.0|Any CPU
+		Release_net35|Any CPU = Release_net35|Any CPU
+		Release_net462|Any CPU = Release_net462|Any CPU
+		Release_net6.0|Any CPU = Release_net6.0|Any CPU
+		Release_net7.0|Any CPU = Release_net7.0|Any CPU
+		Release_netstandard2.0|Any CPU = Release_netstandard2.0|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net35|Any CPU.ActiveCfg = Debug_net35|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net35|Any CPU.Build.0 = Debug_net35|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net462|Any CPU.ActiveCfg = Debug_net462|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net462|Any CPU.Build.0 = Debug_net462|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net6.0|Any CPU.ActiveCfg = Debug_net6.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net6.0|Any CPU.Build.0 = Debug_net6.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net7.0|Any CPU.ActiveCfg = Debug_net7.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_net7.0|Any CPU.Build.0 = Debug_net7.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_netstandard2.0|Any CPU.ActiveCfg = Debug_netstandard2.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Debug_netstandard2.0|Any CPU.Build.0 = Debug_netstandard2.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net35|Any CPU.ActiveCfg = Release_net35|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net35|Any CPU.Build.0 = Release_net35|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net462|Any CPU.ActiveCfg = Release_net462|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net462|Any CPU.Build.0 = Release_net462|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net6.0|Any CPU.ActiveCfg = Release_net6.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net6.0|Any CPU.Build.0 = Release_net6.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net7.0|Any CPU.ActiveCfg = Release_net7.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_net7.0|Any CPU.Build.0 = Release_net7.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_netstandard2.0|Any CPU.ActiveCfg = Release_netstandard2.0|Any CPU
+		{3BD644C9-760B-43FD-A715-003E1F59BF20}.Release_netstandard2.0|Any CPU.Build.0 = Release_netstandard2.0|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3C29CED-E57B-4DC0-893B-BD72F30630A1}
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

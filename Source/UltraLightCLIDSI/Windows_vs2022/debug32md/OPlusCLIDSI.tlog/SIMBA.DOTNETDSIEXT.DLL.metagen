@@ -1,0 +1,498 @@
+  Simba.DotNetDSIExt.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v2.0.50727
+Assembly Simba.DotNetDSIExt, Version=10.3.0.1001, Culture=neutral, PublicKeyToken=a152926b1fd3d799: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Simba.DotNetDSI, Version=10.3.0.1001, Culture=neutral, PublicKeyToken=861a45bbfd01762d: 
+	hash=None, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Simba.DotNetDSIExt.DSIExtColumnCondition: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    Simba.DotNetDSIExt.DSIExtColumnConditionType ConditionType 'get ' : 
+  Methods:
+    GetAsColumnInSet(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetAsColumnPrefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetAsColumnRange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ConditionType(): PrivateScope, Public, HideBySig, SpecialName
+Struct Simba.DotNetDSIExt.DSIExtColumnConditionType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_IS_NOT_NULL = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_IS_IN_RANGE = 2 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_IS_IN_SET = 3 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_HAS_PREFIX = 4 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_MINIMUM = 5 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_MAXIMUM = 6 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnConditionType COLUMN_CONDITION_INVALID = 7 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtColumnInSetCondition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSIExt.DSIExtColumnCondition
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.List`1[System.Object] KeyData 'get set' : 
+  Methods:
+    GetAsColumnInSet(): PrivateScope, Public, Virtual, HideBySig
+    get_KeyData(): PrivateScope, Public, HideBySig, SpecialName
+    set_KeyData(List`1): PrivateScope, Public, HideBySig, SpecialName
+Class Simba.DotNetDSIExt.DSIExtColumnNotNullCondition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSIExt.DSIExtColumnCondition
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Simba.DotNetDSIExt.DSIExtColumnPrefixCondition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSIExt.DSIExtColumnCondition
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Prefix 'get ' : 
+  Methods:
+    GetAsColumnPrefix(): PrivateScope, Public, Virtual, HideBySig
+    get_Prefix(): PrivateScope, Public, HideBySig, SpecialName
+Class Simba.DotNetDSIExt.DSIExtColumnRangeCondition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSIExt.DSIExtColumnCondition
+    Void .ctor(Simba.DotNetDSIExt.DSIExtRangeEndpointType, Simba.DotNetDSIExt.DSIExtRangeEndpointType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Simba.DotNetDSIExt.DSIExtRangeEndpointType, Simba.DotNetDSIExt.DSIExtRangeEndpointType, System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object MaximumSegment 'get set' : 
+    System.Object MinimumSegment 'get set' : 
+    Simba.DotNetDSIExt.DSIExtRangeEndpointType MaximumType 'get set' : 
+    Simba.DotNetDSIExt.DSIExtRangeEndpointType MinimumType 'get set' : 
+  Methods:
+    GetAsColumnRange(): PrivateScope, Public, Virtual, HideBySig
+    get_MaximumSegment(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaximumSegment(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_MinimumSegment(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinimumSegment(Object): PrivateScope, Public, HideBySig, SpecialName
+    get_MaximumType(): PrivateScope, Public, HideBySig, SpecialName
+    set_MaximumType(DSIExtRangeEndpointType): PrivateScope, Public, HideBySig, SpecialName
+    get_MinimumType(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinimumType(DSIExtRangeEndpointType): PrivateScope, Public, HideBySig, SpecialName
+Struct Simba.DotNetDSIExt.DSIExtColumnSearchableType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtColumnSearchableType DSI_PRED_NONE = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnSearchableType DSI_PRED_CHAR = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnSearchableType DSI_PRED_BASIC = 2 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnSearchableType DSI_SEARCHABLE = 3 : Public, Static, Literal, HasDefault
+Struct Simba.DotNetDSIExt.DSIExtColumnSortOrderType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtColumnSortOrderType DSIEXT_SORT_ASCENDING = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnSortOrderType DSIEXT_SORT_DESCENDING = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtColumnSortOrderType DSIEXT_SORT_UNSPECIFIED = 2 : Public, Static, Literal, HasDefault
+Struct Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_NULL_EQUALS_EMPTY_STRING = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_TABLE_CACHING = 2 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_AETREE_OPTIMIZATION = 3 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_LOG_AETREES = 4 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_COALESCE_DUPLICATE_GROUP_BY_EXPRESSIONS = 5 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_IGNORE_PARSER_LIMITS = 6 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_LOG_PARSETREE = 7 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_LOG_ETREE = 8 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_USE_DSII_INDEXES = 9 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_PREFER_INDEX_ONLY_SCANS = 10 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_USE_LITERAL_LEN_FOR_INSERT_PARAM_META = 11 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_POWER_FN_FRACTIONAL_EXPONENT = 17 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey DSIEXT_DATAENGINE_STREAM_PUSHED_PARAMS = 18 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtDataEnginePropertyKeyComparator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEqualityComparer`1[Simba.DotNetDSIExt.DSIExtDataEnginePropertyKey]
+  Properties:
+    Simba.DotNetDSIExt.DSIExtDataEnginePropertyKeyComparator Default 'get ' : 
+  Methods:
+    get_Default(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Equals(DSIExtDataEnginePropertyKey, DSIExtDataEnginePropertyKey): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(DSIExtDataEnginePropertyKey): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Simba.DotNetDSIExt.DSIExtDMLSupportType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtDMLSupportType DMLSUPPORTS_NONE = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDMLSupportType DMLSUPPORTS_INDEX_ONLY = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDMLSupportType DMLSUPPORTS_BOOKMARKS = 2 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDMLSupportType DMLSUPPORTS_BOTH = 3 : Public, Static, Literal, HasDefault
+Struct Simba.DotNetDSIExt.DSIExtDMLType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtDMLType DML_INSERT = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDMLType DML_UPDATE = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtDMLType DML_DELETE = 2 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtIndex: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    Simba.DotNetDSIExt.IBookmarkComparator BookmarkComparator 'get ' : 
+    Simba.DotNetDSIExt.IUseableIndexMetadata IndexMetadata 'get set' : 
+    System.Collections.Generic.List`1[Simba.DotNetDSI.DataEngine.IColumn] IncludedColumns 'get set' : 
+    System.Collections.Generic.List`1[Simba.DotNetDSI.DataEngine.IColumn] IndexedColumns 'get set' : 
+    System.Collections.Generic.List`1[System.Byte] TableBookmark 'get ' : 
+    Boolean SupportsTableBookmarks 'get ' : 
+    Boolean MaintainsOrder 'get ' : 
+  Methods:
+    get_BookmarkComparator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IndexMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IndexMetadata(IUseableIndexMetadata): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IncludedColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IncludedColumns(List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IndexedColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IndexedColumns(List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TableBookmark(): PrivateScope, Public, HideBySig, SpecialName
+    get_SupportsTableBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaintainsOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Open(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MoveToNextRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFinishDMLBatch(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFinishRowUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnStartDMLBatch(DSIExtDMLType, Int64, IList`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnStartRowUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetData(Int32, Int64, Int64, Object&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    WriteData(Int32, Object, Int64, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Seek(DSIExtSeekCondition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Simba.DotNetDSIExt.DSIExtIndexColumn: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Simba.DotNetDSI.DataEngine.IColumn): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Simba.DotNetDSI.DataEngine.IColumn, Simba.DotNetDSIExt.DSIExtColumnSortOrderType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Simba.DotNetDSI.DataEngine.IColumn
+    System.IDisposable
+  Properties:
+    System.String Catalog 'get ' : 
+    Boolean IsAutoUnique 'get ' : 
+    Boolean IsCaseSensitive 'get ' : 
+    Simba.DotNetDSI.DataEngine.Nullability IsNullable 'get ' : 
+    Simba.DotNetDSI.DataEngine.Searchable IsSearchable 'get ' : 
+    Boolean IsSortable 'get ' : 
+    Boolean IsUnnamed 'get ' : 
+    Simba.DotNetDSI.DataEngine.Updatable IsUpdatable 'get ' : 
+    System.String Label 'get ' : 
+    System.String Name 'get ' : 
+    System.String Schema 'get ' : 
+    System.String TableName 'get ' : 
+    Simba.DotNetDSI.DataEngine.TypeMetadata TypeMetadata 'get ' : 
+    Simba.DotNetDSI.DataEngine.CollatingCoercibility CollatingCoercibility 'get ' : 
+    Simba.DotNetDSI.DataEngine.DSICollatingSequence CollatingSequence 'get ' : 
+    Simba.DotNetDSIExt.DSIExtColumnSortOrderType SortOrder 'get ' : 
+  Methods:
+    get_Catalog(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsAutoUnique(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsCaseSensitive(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsNullable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSearchable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsSortable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsUnnamed(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsUpdatable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Label(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Name(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Schema(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TableName(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TypeMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CollatingCoercibility(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CollatingSequence(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SortOrder(): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Simba.DotNetDSIExt.DSIExtIndexKey: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.Collections.Generic.List`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    Segment(Int32): PrivateScope, Public, HideBySig
+Class Simba.DotNetDSIExt.DSIExtIndexMetadata: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String, Simba.DotNetDSIExt.DSIExtIndexType, System.Collections.Generic.List`1[Simba.DotNetDSIExt.DSIExtIndexColumn]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Simba.DotNetDSIExt.IIndexMetadata
+  Properties:
+    System.String Name 'get ' : 
+    Simba.DotNetDSIExt.DSIExtIndexType Type 'get set' : 
+    System.Collections.Generic.List`1[Simba.DotNetDSIExt.DSIExtIndexColumn] IndexedColumns 'get ' : 
+    Boolean IsPrimaryKey 'get set' : 
+    Boolean IsSorted 'get set' : 
+    Boolean IsUnique 'get set' : 
+    Boolean IsUseable 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Type(DSIExtIndexType): PrivateScope, Public, HideBySig, SpecialName
+    get_IndexedColumns(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsPrimaryKey(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsPrimaryKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsSorted(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsSorted(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsUnique(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IsUnique(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_IsUseable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetAsUseableIndexMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Simba.DotNetDSIExt.DSIExtIndexMetadataList: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[Simba.DotNetDSIExt.IIndexMetadata]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[Simba.DotNetDSIExt.IIndexMetadata], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Simba.DotNetDSIExt.IIndexMetadataList
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddIndexMetadata(IIndexMetadata): PrivateScope, Public, HideBySig
+    IndexMetadata(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexMetadata(String): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RemoveIndexMetadata(Int32): PrivateScope, Public, HideBySig
+    RemoveIndexMetadata(String): PrivateScope, Public, HideBySig
+Struct Simba.DotNetDSIExt.DSIExtIndexType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtIndexType INDEX_CLUSTERED = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtIndexType INDEX_HASHED = 2 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtIndexType INDEX_OTHER = 3 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtIndexType INDEX_BTREE = 4 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtIndexType INDEX_CONTENT = 5 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtProcedure: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Properties:
+    System.String Catalog 'get ' : 
+    System.String Schema 'get ' : 
+    System.String Name 'get ' : 
+    System.Collections.Generic.IList`1[Simba.DotNetDSIExt.ProcedureParameterMetadata] ParameterMetadata 'get ' : 
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.IColumn] FirstResultMetadata 'get ' : 
+  Methods:
+    get_Catalog(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Schema(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ParameterMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FirstResultMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Execute(ExecutionContext): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Simba.DotNetDSIExt.DSIExtPropertyValues: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    UInt32 DSIEXT_LOG_PRE_OPTIMIZE = 1 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_POST_REORDER = 2 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_POST_OPTIMIZE = 4 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_POST_PASSDOWN = 8 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_POST_DEMORGAN = 16 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_ALL_STEPS = 31 : Public, Static, Literal, HasDefault
+    UInt32 DSIEXT_LOG_DOT_GRAPH = 16 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtQueryExecutor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Simba.DotNetDSI.DataEngine.IQueryExecutor
+    System.IDisposable
+  Properties:
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.ParameterMetadata] ParameterMetadata 'get ' : 
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.IResult] Results 'get ' : 
+  Methods:
+    get_ParameterMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Results(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CancelExecute(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ClearCancel(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ClearPushedParamData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Execute(ExecutionContexts, IWarningListener): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FinalizePushedParamData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PushParamData(Int32, ParameterInputValue): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    SetExecutionTreeLog(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct Simba.DotNetDSIExt.DSIExtRangeEndpointType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtRangeEndpointType DSI_EXT_ENDPOINT_INCLUSIVE = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtRangeEndpointType DSI_EXT_ENDPOINT_EXCLUSIVE = 1 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtRangeEndpointType DSI_EXT_ENDPOINT_UNUSED = 2 : Public, Static, Literal, HasDefault
+Class Simba.DotNetDSIExt.DSIExtResultSet: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    Simba.DotNetDSI.DataEngine.IResultSet
+    Simba.DotNetDSI.DataEngine.IResult
+    System.IDisposable
+  Properties:
+    System.String CatalogName 'get ' : 
+    Simba.DotNetDSI.DataEngine.ResultType ResultType 'get ' : 
+    Int64 RowCount 'get ' : 
+    System.String SchemaName 'get ' : 
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.IColumn] SelectColumns 'get ' : 
+    System.String TableName 'get ' : 
+    Simba.DotNetDSIExt.IIndexMetadataList Indexes 'get ' : 
+  Methods:
+    get_CatalogName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ResultType(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RowCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SchemaName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TableName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Indexes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AppendRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Clone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseCursor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DeleteRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetData(Int32, Int64, Int64, Object&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Move(MoveDirection, Int64): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OnFinishDMLBatch(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnFinishRowUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnStartDMLBatch(DSIExtDMLType, Int64, IList`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OnStartRowUpdate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetCursorType(CursorType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetFetchRowsetSize(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    WriteData(Int32, Object, Int64, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenIndex(IUseableIndexMetadata, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Simba.DotNetDSIExt.DSIExtSeekCondition: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.List`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Simba.DotNetDSIExt.DSIExtColumnCondition, System.Collections.Generic.List`1[System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean HasLastColumnCondition 'get ' : 
+    Simba.DotNetDSIExt.DSIExtColumnCondition LastColumnCondition 'get set' : 
+    System.Collections.Generic.List`1[System.Object] EqualitySegments 'get set' : 
+  Methods:
+    get_HasLastColumnCondition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LastColumnCondition(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LastColumnCondition(DSIExtColumnCondition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EqualitySegments(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EqualitySegments(List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Class Simba.DotNetDSIExt.DSIExtSimpleResultSet: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Simba.DotNetDSIExt.DSIExtResultSet
+  Methods:
+    CloseCursor(): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Virtual, HideBySig
+    Move(MoveDirection, Int64): PrivateScope, Public, Virtual, HideBySig
+    Reset(): PrivateScope, Public, Virtual, HideBySig
+    SetCursorType(CursorType): PrivateScope, Public, Virtual, HideBySig
+    OpenIndex(IUseableIndexMetadata, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig
+Class Simba.DotNetDSIExt.DSIExtSqlDataEngine: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :Simba.DotNetDSI.DataEngine.DSIDataEngine
+  Methods:
+    CreateMetadataHelper(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenTable(String, String, String, DSIExtTableOpenType): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    OpenProcedure(String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Prepare(String): PrivateScope, Public, Virtual, HideBySig
+    GetProperty(DSIExtDataEnginePropertyKey): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetPropertyMap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetProperty(DSIExtDataEnginePropertyKey, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetETreeLog(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Struct Simba.DotNetDSIExt.DSIExtTableOpenType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int16 value__ : Public, SpecialName, RTSpecialName
+    Simba.DotNetDSIExt.DSIExtTableOpenType ReadOnly = 0 : Public, Static, Literal, HasDefault
+    Simba.DotNetDSIExt.DSIExtTableOpenType ReadWrite = 1 : Public, Static, Literal, HasDefault
+Interface Simba.DotNetDSIExt.IBookmarkComparator: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Simba.DotNetDSIExt.ICellComparator
+  Properties:
+    UInt16 BookmarkSize 'get ' : 
+    Boolean ShouldAlwaysSortBookmarks 'get ' : 
+  Methods:
+    Compare(List`1, List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_BookmarkSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShouldAlwaysSortBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Simba.DotNetDSIExt.ICellComparator: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Compare(List`1, List`1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Simba.DotNetDSIExt.IIndexMetadata: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    System.String Name 'get ' : 
+    Simba.DotNetDSIExt.DSIExtIndexType Type 'get ' : 
+    System.Collections.Generic.List`1[Simba.DotNetDSIExt.DSIExtIndexColumn] IndexedColumns 'get ' : 
+    Boolean IsPrimaryKey 'get ' : 
+    Boolean IsSorted 'get ' : 
+    Boolean IsUnique 'get ' : 
+    Boolean IsUseable 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IndexedColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsPrimaryKey(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsSorted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsUnique(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsUseable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetAsUseableIndexMetadata(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Simba.DotNetDSIExt.IIndexMetadataList: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Properties:
+    Int32 Count 'get ' : 
+  Methods:
+    IndexMetadata(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IndexMetadata(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface Simba.DotNetDSIExt.IMetadataHelper: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetNextTable(String&(Out), String&(Out), String&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Simba.DotNetDSIExt.IProcedureMetadataHelper: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Simba.DotNetDSIExt.IMetadataHelper
+  Methods:
+    GetNextProcedure(String&(Out), String&(Out), String&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Simba.DotNetDSIExt.IUseableIndexMetadata: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Interfaces:
+    Simba.DotNetDSIExt.IIndexMetadata
+  Properties:
+    System.String Name 'get ' : 
+    Simba.DotNetDSIExt.DSIExtIndexType Type 'get ' : 
+    System.Collections.Generic.List`1[Simba.DotNetDSIExt.DSIExtIndexColumn] IndexedColumns 'get ' : 
+    Boolean IsPrimaryKey 'get ' : 
+    Boolean IsSorted 'get ' : 
+    Boolean IsUnique 'get ' : 
+    Boolean IsUseable 'get ' : 
+    Boolean CanProduceTableBookmarks 'get ' : 
+    System.Collections.Generic.List`1[System.UInt16] IncludedColumnOrdinals 'get ' : 
+    System.Collections.Generic.Dictionary`2[System.UInt16,System.UInt16] GetTableColumnToIndexColumnMap 'get ' : 
+    Boolean IsInBookmarkComparatorOrder 'get ' : 
+    Simba.DotNetDSIExt.DSIExtDMLSupportType UpdateSupport 'get ' : 
+    Simba.DotNetDSIExt.DSIExtDMLSupportType DeleteSupport 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IndexedColumns(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsPrimaryKey(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsSorted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsUnique(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsUseable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CanIndexOnNull(UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CanProduceTableBookmarks(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IncludedColumnOrdinals(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_GetTableColumnToIndexColumnMap(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    IsConditionTypeSupported(DSIExtColumnConditionType, UInt16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsInBookmarkComparatorOrder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UpdateSupport(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DeleteSupport(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class Simba.DotNetDSIExt.ProcedureParameterMetadata: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSI.DataEngine.ParameterMetadata
+    Void .ctor(Int32, Simba.DotNetDSI.DataEngine.ParameterDirection, Simba.DotNetDSI.DataEngine.TypeMetadata, System.String, Boolean, Simba.DotNetDSI.DataEngine.Nullability, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Simba.DotNetDSI.DataEngine.ParameterDirection, Simba.DotNetDSI.DataEngine.TypeMetadata, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean HasDefaultValue 'get set' : 
+  Methods:
+    get_HasDefaultValue(): PrivateScope, Public, HideBySig, SpecialName
+Class Simba.DotNetDSIExt.Properties.Resources: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object InternalSyncObject 'get ' : 
+    Simba.DotNetDSI.MultiSourceResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String CURSOR_TYPE_NOT_SUPPORTED 'get ' : 
+    System.String DATAENGINE_PROP_NOT_FOUND 'get ' : 
+    System.String INVALID_FUNC_CALL 'get ' : 
+  Methods:
+    get_InternalSyncObject(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_ResourceManager(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Public, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_CURSOR_TYPE_NOT_SUPPORTED(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_DATAENGINE_PROP_NOT_FOUND(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_INVALID_FUNC_CALL(): PrivateScope, Public, Static, HideBySig, SpecialName
+    CURSOR_TYPE_NOT_SUPPORTEDFormat(Object): PrivateScope, Public, Static, HideBySig
+Class Simba.DotNetDSIExt.Properties.Resources+ResourceNames: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String CURSOR_TYPE_NOT_SUPPORTED = CURSOR_TYPE_NOT_SUPPORTED : Public, Static, Literal, HasDefault
+    System.String DATAENGINE_PROP_NOT_FOUND = DATAENGINE_PROP_NOT_FOUND : Public, Static, Literal, HasDefault
+    System.String INVALID_FUNC_CALL = INVALID_FUNC_CALL : Public, Static, Literal, HasDefault

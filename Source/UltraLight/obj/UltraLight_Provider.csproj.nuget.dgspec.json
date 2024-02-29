@@ -1,0 +1,59 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\UltraLight_Provider.csproj": {}
+  },
+  "projects": {
+    "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\UltraLight_Provider.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\UltraLight_Provider.csproj",
+        "projectName": "Simba.UltraLight.Provider",
+        "projectPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\UltraLight_Provider.csproj",
+        "packagesPath": "C:\\Users\\ikario\\.nuget\\packages\\",
+        "outputPath": "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\Examples\\Source\\OPlus\\SimbaPOC\\Source\\UltraLight\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages"
+        ],
+        "configFilePaths": [
+          "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\NuGet.Config",
+          "C:\\Users\\ikario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net35"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Simba Technologies\\SimbaEngineSDK\\10.3\\DataAccessComponents\\Bin\\release": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net35": {
+            "targetAlias": "net35",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net35": {
+          "targetAlias": "net35",
+          "dependencies": {
+            "Simba.ADO.Net": {
+              "target": "Package",
+              "version": "[10.3.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

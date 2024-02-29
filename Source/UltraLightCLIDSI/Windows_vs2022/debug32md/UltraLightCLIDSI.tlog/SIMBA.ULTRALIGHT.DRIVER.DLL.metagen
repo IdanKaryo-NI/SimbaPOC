@@ -1,0 +1,55 @@
+  Simba.UltraLight.Properties.Resources.resources - Embedded, ContainedInManifestFile, 
+  Simba.UltraLight.ULConnectionDialog.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly Simba.UltraLight.Driver, Version=10.3.0.1001, Culture=neutral, PublicKeyToken=85df83a0046b8966: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly Simba.DotNetDSI, Version=10.3.0.1001, Culture=neutral, PublicKeyToken=861a45bbfd01762d: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class Simba.UltraLight.ULConnection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSI.DSIConnection
+    Void .ctor(Simba.DotNetDSI.IEnvironment): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Connect(Dictionary`2): PrivateScope, Public, Virtual, HideBySig
+    CreateStatement(): PrivateScope, Public, Virtual, HideBySig
+    Disconnect(): PrivateScope, Public, Virtual, HideBySig
+    PromptDialog(Dictionary`2, Dictionary`2, IntPtr, PromptType): PrivateScope, Public, Virtual, HideBySig
+    UpdateConnectionSettings(Dictionary`2): PrivateScope, Public, Virtual, HideBySig
+Class Simba.UltraLight.ULConnectionDialog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(System.Collections.Generic.Dictionary`2[System.String,System.Object], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class Simba.UltraLight.ULDriver: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSI.DSIDriver
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateEnvironment(): PrivateScope, Public, Virtual, HideBySig
+Class Simba.UltraLight.ULEnvironment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Simba.DotNetDSI.DSIEnvironment
+    Void .ctor(Simba.DotNetDSI.IDriver): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CreateConnection(): PrivateScope, Public, Virtual, HideBySig
+Class Simba.UltraLight.DataEngine.ULQueryExecutor: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Simba.DotNetDSI.ILogger, Boolean, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Simba.DotNetDSI.DataEngine.IQueryExecutor
+    System.IDisposable
+  Properties:
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.ParameterMetadata] ParameterMetadata 'get set' : 
+    System.Collections.Generic.IList`1[Simba.DotNetDSI.DataEngine.IResult] Results 'get set' : 
+  Methods:
+    get_ParameterMetadata(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Results(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CancelExecute(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ClearCancel(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ClearPushedParamData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Dispose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Execute(ExecutionContexts, IWarningListener): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FinalizePushedParamData(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    PushParamData(Int32, ParameterInputValue): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask

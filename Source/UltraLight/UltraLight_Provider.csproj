@@ -1,0 +1,88 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Configurations>Debug_netstandard2.0;Release_netstandard2.0;Debug_net462;Release_net462;Debug_net6.0;Release_net6.0;Debug_net7.0;Release_net7.0;Debug_net35;Release_net35</Configurations>
+      
+    <TargetFramework Condition="$(Configuration.Contains('netstandard2.0'))">netstandard2.0</TargetFramework>
+    <TargetFramework Condition="$(Configuration.Contains('net462'))">net462</TargetFramework>
+    <TargetFramework Condition="$(Configuration.Contains('net35'))">net35</TargetFramework>
+    <TargetFramework Condition="$(Configuration.Contains('net6.0'))">net6.0</TargetFramework>
+    <TargetFramework Condition="$(Configuration.Contains('net7.0'))">net7.0</TargetFramework>
+      
+    <ReleaseOrDebug Condition="$(Configuration.Contains('Debug'))">debug</ReleaseOrDebug>
+    <ReleaseOrDebug Condition="!$(Configuration.Contains('Debug'))">release</ReleaseOrDebug>
+      
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <OutputPath>..\..\Bin\$(ReleaseOrDebug)</OutputPath>
+    <RootNamespace>Simba.UltraLight</RootNamespace>
+    <AssemblyName>Simba.UltraLight.Provider</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>UltraLight.snk</AssemblyOriginatorKeyFile>
+    <DocumentationFile>$(OutputPath)\Simba.UltraLight.Provider.xml</DocumentationFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <DelaySign>false</DelaySign>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="DotNet\ULDotNetCommand.cs" />
+    <Compile Update="DotNet\ULDotNetCommandBuilder.cs" />
+    <Compile Update="DotNet\ULDotNetConnection.cs" />
+    <Compile Update="DotNet\ULDotNetDataAdapter.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ULConnectionDialog.cs" />
+    <Compile Remove="ULConnectionDialog.Designer.cs" />
+    <EmbeddedResource Remove="ULConnectionDialog.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Simba.ADO.Net" Version="10.3.0.0" />
+  </ItemGroup>
+</Project>
